@@ -8,11 +8,13 @@ package ca.sheridancollege.project;
 import java.util.ArrayList;
 
 /**
- * The class that models your game. You should create a more specific child of this class and instantiate the methods
- * given.
+
  *
- * @author dancye
- * @author Paul Bonenfant Jan 2020
+ * @author anmol 18 Feb 2024
+ * @author jaskaran 18 Feb 2024
+ * @author kanwar 18 Feb 2024
+ * @author balkaran 18 Feb 2024
+
  */
 public abstract class Game {
 

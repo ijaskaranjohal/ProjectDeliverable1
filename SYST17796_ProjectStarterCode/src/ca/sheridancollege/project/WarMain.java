@@ -1,14 +1,32 @@
 package ca.sheridancollege.project;
+
+import java.util.Scanner;
+
 /**
+ * @author anmol 18 Feb 2024
+ * @author jaskaran 18 Feb 2024
+ * @author kanwar 18 Feb 2024
+ * @author balkaran 18 Feb 2024
  * A class that contains the main method to run the War game.
  */
 public class WarMain {
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Prompt players to register
+        System.out.print("Enter name for Player 1: ");
+        String player1Name = input.nextLine();
+
+        System.out.print("Enter name for Player 2: ");
+        String player2Name = input.nextLine();
+
         int roundLimit = 10; // Set the round limit
-        WarGame warGame = new WarGame(roundLimit);
+        WarGame warGame = new WarGame(player1Name, player2Name, roundLimit);
         warGame.play();
         warGame.declareWinner();
+
+        input.close();
     }
 }
 

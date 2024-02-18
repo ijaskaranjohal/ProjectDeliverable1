@@ -7,6 +7,10 @@ package ca.sheridancollege.project;
 
 
 /**
+ * @author anmol 18 Feb 2024
+ * @author jaskaran 18 Feb 2024
+ * @author kanwar 18 Feb 2024
+ * @author balkaran 18 Feb 2024
  * A class that models each Player in the War game.
  */
 public class Player {

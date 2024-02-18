@@ -2,6 +2,10 @@ package ca.sheridancollege.project;
 import java.util.ArrayList;
 
 /**
+ * @author anmol 18 Feb 2024
+ * @author jaskaran 18 Feb 2024
+ * @author kanwar 18 Feb 2024
+ * @author balkaran 18 Feb 2024
  * A class that models the War card game.
  */
 public class WarGame extends Game {
@@ -12,13 +16,13 @@ public class WarGame extends Game {
     private final int roundLimit;
     private int currentRound;
 
-    public WarGame(int roundLimit) {
+    public WarGame(String player1Name, String player2Name, int roundLimit) {
         super("War");
         deck = new GroupOfCards();
         initializeDeck();
         deck.shuffle();
-        player1 = new Player("Player 1");
-        player2 = new Player("Player 2");
+        player1 = new Player(player1Name);
+        player2 = new Player(player2Name);
         dealCards();
         this.roundLimit = roundLimit;
         currentRound = 0;
